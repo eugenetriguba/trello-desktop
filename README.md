@@ -1,6 +1,6 @@
 # Trello Desktop
 
-[![Build Status](https://api.travis-ci.com/eugenetriguba/trello-desktop.svg)](https://travis-ci.com/github/eugenetriguba/trello-desktop)
+[![Build Status](https://api.travis-ci.com/eugenetriguba/trello-desktop.svg?branch=master)](https://travis-ci.com/github/eugenetriguba/trello-desktop)
 
 > Unofficial Trello Desktop Application
 
