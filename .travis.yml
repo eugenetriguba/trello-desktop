@@ -2,6 +2,13 @@ language: node_js
 node_js:
   - "14"
 
+dist: bionic
+addons:
+  snaps:
+    - name: snapcraft
+      confinement: classic
+      channel: stable
+
 before_deploy:
   - yarn install
   - yarn build
