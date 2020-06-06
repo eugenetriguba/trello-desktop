@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "14"
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  files:
+    - "dist/*.AppImage"
+    - "dist/*.deb"
+    - "dist/*.snap"
+    - "dist/*.freebsd"
+    - "dist/*.pacman"
+    - "dist/*.rpm"
+    - "dist/*.zip"
+    - "dist/*.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true

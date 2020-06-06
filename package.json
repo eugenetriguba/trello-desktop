@@ -17,7 +17,9 @@
         "deb",
         "rpm",
         "freebsd",
-        "pacman"
+        "pacman",
+        "zip",
+        "tar.gz"
       ],
       "icon": "build/icons/256x256.png",
       "category": "Productivity"
@@ -30,6 +32,7 @@
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
+    "build": "yarn dist",
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "postinstall": "electron-builder install-app-deps"
