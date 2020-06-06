@@ -3,6 +3,7 @@ node_js:
   - "14"
 
 before_deploy:
+  - yarn install
   - yarn build
 
 deploy:
