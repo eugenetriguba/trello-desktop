@@ -4,6 +4,8 @@
 
 > Unofficial Trello Desktop Application
 
+![Preview](./preview.png)
+
 This app provides an Electron wrapper around Trello for use on Linux.
 Desktop apps for Windows and macOS are already provided officially by Trello.
 
