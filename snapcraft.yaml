@@ -1,0 +1,20 @@
+name: trello
+title: Trello
+base: core18
+version: git
+summary: Unofficial Trello Desktop Client
+description: |
+  This unofficial Trello desktop client is built as an
+  Electron wrapper around the Trello website.
+license: MIT
+grade: stable
+confinement: strict
+
+apps:
+  trello:
+    command: /usr/bin/trello
+    desktop: /usr/share/applications/trello.desktop
+
+parts:
+  my-part:
+    plugin: nil
