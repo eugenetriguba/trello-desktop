@@ -1,0 +1,64 @@
+{
+  "name": "trello-desktop",
+  "productName": "Trello",
+  "version": "1.0.0",
+  "description": "Unofficial Trello desktop app",
+  "license": "MIT",
+  "repository": "https://github.com/eugenetriguba/trello-desktop",
+  "author": "Eugene Triguba <eugenetriguba@gmail.com> triguba.com",
+  "build": {
+    "files": [
+      "dist"
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "snap",
+        "deb",
+        "rpm",
+        "freebsd",
+        "pacman"
+      ],
+      "icon": "build/icons/256x256.png",
+      "category": "Productivity"
+    }
+  },
+  "engines": {
+    "node": ">= 14",
+    "yarn": ">= 1"
+  },
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [
+    "electron",
+    "trello",
+    "desktop"
+  ],
+  "dependencies": {
+    "source-map-support": "^0.5.19"
+  },
+  "devDependencies": {
+    "electron": "^9.0.2",
+    "electron-builder": "^22.7.0",
+    "electron-store": "^5.2.0",
+    "electron-updater": "^4.3.1",
+    "electron-webpack": "^2.8.2",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0"
+  },
+  "electronWebpack": {
+    "title": "Trello",
+    "renderer": null,
+    "main": {
+      "sourceDirectory": "src/"
+    }
+  }
+}
