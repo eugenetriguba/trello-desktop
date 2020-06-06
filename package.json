@@ -30,6 +30,7 @@
     "yarn": ">= 1"
   },
   "scripts": {
+    "test": "echo 'no tests yet'",
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
     "build": "yarn dist",
